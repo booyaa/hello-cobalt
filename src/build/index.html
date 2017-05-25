@@ -3,11 +3,9 @@
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        {% if is_post %}
-          <title>Hello Cobalt | {{ title }}</title>
-        {% else %}
+        
        	  <title>Hello Cobalt | Welcome</title>
-        {% endif %}
+        
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="//writ.cmcenroe.me/1.0.2/writ.min.css">
@@ -15,11 +13,26 @@
     </head>
     <body>
     <div>
-      {% if is_post %}
-        {% include '_layouts/post.liquid' %}
-      {% else %}
-        {{ content }}
-      {% endif %}
+      
+        <div >
+  <h2>Blog!</h2>
+  <br />
+  <div>
+    
+  <article>
+    <h3><a href="2017/snippet-test/index.html">Snippet Test</a></h3>
+    <p>Glossier prism humblebrag excepteur, try-hard jianbing pariatur succulents pork belly non  XOXO small batch plaid echo park.  Keffiyeh tattooed shoreditch dreamcatcher...
+    </article>
+  
+  <article>
+    <h3><a href="2016/first-post/index.html">First Post</a></h3>
+    <p>Heirloom hexagon selfies, bitters meditation elit mlkshk fashion axe irony.  Keffiyeh normcore biodiesel ullamco banjo.  Magna locavore chicharrones drinking vinegar helvetica,...
+    </article>
+  
+  </div>
+</div>
+
+      
     </div>
   </body>
 </html>

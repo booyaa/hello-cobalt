@@ -3,11 +3,9 @@
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        {% if is_post %}
-          <title>Hello Cobalt | {{ title }}</title>
-        {% else %}
-       	  <title>Hello Cobalt | Welcome</title>
-        {% endif %}
+        
+          <title>Hello Cobalt | First Post</title>
+        
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="//writ.cmcenroe.me/1.0.2/writ.min.css">
@@ -15,11 +13,18 @@
     </head>
     <body>
     <div>
-      {% if is_post %}
-        {% include '_layouts/post.liquid' %}
-      {% else %}
-        {{ content }}
-      {% endif %}
+      
+        <div>
+  <h2>First Post</h2>
+  <time pubdate="pubdate">Jan 14, 2016</time>
+  <p>
+    <h1>This is our first Post!</h1>
+<p>Welcome to the first post ever on cobalt.rs!</p>
+
+  </p>
+</div>
+
+      
     </div>
   </body>
 </html>

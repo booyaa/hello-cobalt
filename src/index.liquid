@@ -2,13 +2,13 @@ extends: default.liquid
 ---
 <div >
   <h2>Blog!</h2>
-  <!--<br />-->
+  <br />
   <div>
     {% for post in posts %}
-      <div>
-        <h4>{{post.title}}</h4>
-        <h4><a href="{{post.path}}">{{ post.title }}</a></h4>
-      </div>
-    {% endfor %}
+  <article>
+    <h3><a href="{{ post.path }}">{{ post.title }}</a></h3>
+    {{ post.content | truncatewords: 23, '...' }}
+    </article>
+  {% endfor %}
   </div>
 </div>

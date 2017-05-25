@@ -4,3 +4,8 @@ dest: "build"
 ignore:
   - .git/*
   - build/*
+rss: rss.xml
+name: Hello Cobalt
+description: A test blog for cobalt!
+link: http://booyaa.github.io/hello-cobalt
+
