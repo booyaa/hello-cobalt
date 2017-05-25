@@ -1,6 +1,6 @@
 name: cobalt blog
 source: "."
-dest: "build"
+dest: "../docs"
 ignore:
   - .git/*
   - build/*
