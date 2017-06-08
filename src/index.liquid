@@ -1,14 +1,13 @@
 extends: default.liquid
+
+title: hello cobalt (a test blog)
+route: blog
 ---
-<div >
-  <h2>Blog!</h2>
-  <br />
-  <div>
-    {% for post in posts %}
-  <article>
-    <h3><a href="{{ post.path }}">{{ post.title }}</a></h3>
-    {{ post.content | truncatewords: 23, '...' }}
-    </article>
+
+<ul class="blog-list">
+  {% for post in posts %}
+    <li>
+      <a href="{{ post.path }}">{{ post.title }}</a>
+    </li>
   {% endfor %}
-  </div>
-</div>
+</ul>

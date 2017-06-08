@@ -1,8 +1,6 @@
 extends: default.liquid
 
-title: Snippet Test
-date: 25 May 2017 20:47:00 +0100
-date: 2017-06-04 16:48:08 +0100
+title: MacBook Air Setup
 date: 4 Jun 2017 16:49:09 +0100
 
 path: 2017/mba-setup
